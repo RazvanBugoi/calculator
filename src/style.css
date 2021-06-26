@@ -1,0 +1,146 @@
+body { 
+    background-color: black;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+}
+.wrapper {
+    width: 500px;
+    text-align: center;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.calculator-history, .current-numbers {
+    color: white;
+}
+
+.buttons-wrapper { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+
+    "ac plusminus rest divide"
+    "seven eight nine esc"
+    "four five six minus"
+    "one two three plus"
+    "null   null   point equal";
+
+    grid-gap: 10px;
+
+}
+
+.button {
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#ac {
+    grid-area: ac;
+    background: #D4D4D2
+}
+
+#plusminus {
+    grid-area: plusminus;
+}
+
+#rest {
+    grid-area: rest;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#esc {
+    grid-area: ecs;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#dot {
+    grid-area: point;
+}
+
+#zero {
+    grid-area: null;
+}
+
+#one { 
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#ac, #plusminus, #rest {
+    background-color: #D4D4D2;
+}
+
+#divide, #ecs, #minus, #plus, #equal {
+    background-color: #FF9500;
+    color: white;
+}
+
+#dot, #zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+    background-color: #505050;
+    color: white
+}
