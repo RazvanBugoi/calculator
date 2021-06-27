@@ -28,7 +28,7 @@ h1 {
     margin-right: 10px;
 }
 
-.calculator-history, .current-numbers {
+#calculator-history, #current-numbers {
     color: white;
 }
 
