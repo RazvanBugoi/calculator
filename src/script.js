@@ -25,10 +25,13 @@ operators.forEach((el) => el.addEventListener('click', function() {
 
 window.addEventListener("keydown", function(event) {
     if (event.key == "Enter") {
-        const no1 = Number(displayOutput.match(/\d/g).join(''));
-        const no2 = Number(historyOutput.match(/\d/g).join(''))
+        const no1 = Number(historyOutput.match(/\d/g).join(''))
+        console.log(no1)
+        const no2 = Number(displayOutput.match(/\d/g).join(''));
+        console.log(no2)
         history.textContent = operate(currentOperatorSelected, no1, no2)
         displayNumbers.textContent = ''
+        currentOperatorSelected = '';
     }
     return
   }, true);
